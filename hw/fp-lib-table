@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name footprints)(type KiCad)(uri E:/DOWNLOADS_CH/ul_HR911130A/KiCAD/2021-10-06_12-23-42/footprints.pretty)(options "")(descr ""))
+  (lib (name usd)(type KiCad)(uri ${KIPRJMOD}/lib/usd)(options "")(descr ""))
+  (lib (name RISCVlogo)(type KiCad)(uri ${KIPRJMOD}/lib/RISCVlogo.pretty)(options "")(descr ""))
+)

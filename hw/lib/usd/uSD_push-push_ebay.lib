@@ -1,0 +1,27 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# SD_ebay-uSD-push/push_SMD
+#
+DEF SD_ebay-uSD-push/push_SMD XS 0 20 Y Y 1 F N
+F0 "XS" 225 -575 50 H V C CNN
+F1 "SD_ebay-uSD-push/push_SMD" -325 0 50 V V C CNN
+F2 "Connectors:Conn_uSDcard" 0 0 10 H I C CNN
+F3 "_" 0 0 10 H I C CNN
+F4 "_" 0 0 10 H I C CNN "Manf#"
+F5 "ebay" 0 0 10 H I C CNN "Manf"
+DRAW
+S -275 525 275 -525 0 0 10 N
+X DAT2 1 375 0 100 L 50 50 1 1 B
+X CS/DAT3 2 375 150 100 L 50 50 1 1 I
+X DI/CMD 3 375 300 100 L 50 50 1 1 I
+X Vdd 4 -150 625 100 D 50 50 1 1 I
+X CLK 5 375 450 100 L 50 50 1 1 I
+X GND 6 -150 -625 100 U 50 50 1 1 I
+X DO/DAT0 7 375 -300 100 L 50 50 1 1 I
+X DAT1 8 375 -150 100 L 50 50 1 1 B
+X CD 9 375 -450 100 L 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+#End Library
