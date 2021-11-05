@@ -6,20 +6,40 @@ Evaluation board for AllWinner's RISC-V 64 SoC F133/D1s
 ## Highlights
 * Breaks out all IOs, involving analog peripherals, in a compact 56*56mm 2-layer board
 * Comes with standard interfaces including USB, micro SD, LCD, Line-in and headphone
-* Optimized components arrangement for soldering on heating tables
+* Optimized components arrangement for soldering on a hot plate
 
 ## About the Chip
 D1s/F133: RISC-V 64 single core @1.008G with in package 64MB DDR2
 
-## Schematic
+## Schematic & BOM
 ![schematic](img/schematic.png)
 
-The schematic in KiCAD format is available under [hw](hw/).
+The schematic in KiCAD format is available under [hw](hw/). BOM in csv format is at [docs/BOM.csv](docs/BOM.csv). Do note that many components are optional (required by some specific peripherals)!
 
 ## Notes
 * Leave all BOOT selection resistors unconnected if only one BOOT media is present
 * Choose load capacitors according to specs of crystals
 * When board is to be powered by 3.3V, connect to the power via the 3.3V pin of the pinheader, and `D4` should be soldered. Note USB host will not work properly in this condition due to the absence of 5V power.
+
+## FAQ
+> Are you going to sell some manufactured boards?
+
+No. I have no time and resource to batch manufacture this board. Some commercial boards should come in a couple of months (not from me).
+
+> Where to buy some D1s chips?
+
+The supply is not yet very sufficient, but it should be more available within a month (hopefully can be purchased directly from Allwinner). For now there are some suppliers providing samples on taobao, but I doubt whether international shipping is supported.
+
+> More information? Like what can this board do now?
+
+The progress of this project is logged at [this Hackaday page](https://hackaday.io/project/182389-the-cheapest-risc-v-64-computer-by-now), and this repository will contain the source and documentation of this board only. Currently this board can boot up the tina Linux system (an OpenWRT fork by Allwinner) and populate a shell prompt via the serial, drive a parallel RGB display, and play sounds via the headphone socket. More functionalities will be tested in the future.
+
+**Additional Words**
+
+This project has gained unexpected popularity since the announcement. Thanks for all the interest! However, I am merely an enthusiast with limited time can be put on this, so I am sorry to disappoint who want to buy one. It is perfectly Okay if someone want to put this into production, as long as my work is acknowledged and the Licence is followed (better if you could contact me in advance). 
+
+D1s is an awesome chip with many features to be exploited. Designing a PCB is not hard as the arrangement of pins is quite thoughtful. The crucial part is correct values of some key components, and they were all marked in the schematic. A symbol of D1s with annotated pins is also included in this repository, so this should also be a good start point for your own design.
+
 
 ## Licence
 This project is available under the [CERN OHL-w v2](https://ohwr.org/project/cernohl/wikis/Documents/CERN-OHL-version-2) licence. 
