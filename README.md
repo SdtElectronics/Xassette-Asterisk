@@ -28,7 +28,7 @@ No. I have no time and resource to batch manufacture this board. Some commercial
 
 > Where to buy some D1s chips?
 
-The supply is not yet very sufficient, but it should be more available within a month (hopefully can be purchased directly from Allwinner). For now there are some suppliers providing samples on taobao, but I doubt whether international shipping is supported.
+The supply is not yet very sufficient, but it should be more available within a month (hopefully can be purchased directly from Allwinner). For now there are some suppliers providing samples on taobao.
 
 > More information? Like what can this board do now?
 
