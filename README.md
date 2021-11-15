@@ -21,6 +21,10 @@ The schematic in KiCAD format is available under [hw](hw/). BOM in csv format is
 * Choose load capacitors according to specs of crystals
 * When board is to be powered by 3.3V, connect to the power via the 3.3V pin of the pinheader, and `D4` should be soldered. Note USB host will not work properly in this condition due to the absence of 5V power.
 
+## Accessories
+### IO Expansion Board
+To make use of IOs in the LCD port easier, [this expansion board](hw/auxiliary/Brk40p) converts all nets from FPC to 2.54mm pin headers with labeled IO indices. For 24pin DVP port, there is also an [expansion board](https://github.com/SdtElectronics/Biscuits/tree/master/24P_FPC_FFC_Breakout) but with no labels.
+
 ## FAQ
 > Are you going to sell some manufactured boards?
 
