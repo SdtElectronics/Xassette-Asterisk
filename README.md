@@ -11,6 +11,11 @@ Evaluation board for AllWinner's RISC-V 64 SoC F133/D1s
 ## About the Chip
 D1s/F133: RISC-V 64 single core @1.008G with in package 64MB DDR2
 
+## Pin Out
+![pinout](img/pinc.jpg)
+
+Pins for LCD and DVP camera can also be used as IOs. See schematic below for detailed pin assignment.
+
 ## Schematic & BOM
 ![schematic](img/schematic.png)
 
