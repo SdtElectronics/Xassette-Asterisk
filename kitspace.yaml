@@ -1,0 +1,5 @@
+eda:
+  type: kicad
+  pcb: hw/XassetteAsterisk.kicad_pcb
+bom: docs/BOM.csv
+color: white
