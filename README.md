@@ -13,6 +13,7 @@ D1s/F133: RISC-V 64 single core @1.008G with in package 64MB DDR2
 
 ## Pin Out
 ![resources](img/resources.jpg)
+
 ![pinout](img/pinc.jpg)
 
 Pins for LCD and DVP camera can also be used as IOs. See schematic below for detailed pin assignment.
@@ -25,7 +26,7 @@ Pins for LCD and DVP camera can also be used as IOs. See schematic below for det
 ## Schematic & BOM
 ![schematic](img/schematic.png)
 
-The schematic in KiCAD format is available under [hw](hw/). BOM in csv format is at [docs/BOM.csv](docs/BOM.csv). Do note that many components are optional (required by some specific peripherals)!
+The schematic in KiCAD format is available under [hw](hw/). BOM in csv format is at [docs/BOM.csv](docs/BOM.csv), and kitspace provides an [online BOM](https://kitspace.org/interactive_bom/?github.com/SdtElectronics/Xassette-Asterisk). Do note that many components are optional (required by some specific peripherals)!
 
 ## Notes
 * Leave all BOOT selection resistors unconnected if only one BOOT media is present
@@ -47,7 +48,7 @@ The supply is not yet very sufficient, but it should be more available within a 
 
 > More information? Like what can this board do now?
 
-The progress of this project is logged at [this Hackaday page](https://hackaday.io/project/182389-the-cheapest-risc-v-64-computer-by-now), and this repository will contain the source and documentation of this board only. Currently this board can boot up the tina Linux system (an OpenWRT fork by Allwinner) and populate a shell prompt via the serial, drive a parallel RGB display, and play sounds via the headphone socket. More functionalities will be tested in the future.
+The progress of this project is logged at [this Hackaday page](https://hackaday.io/project/182389-the-cheapest-risc-v-64-computer-by-now), and this repository will contain the source and documentation of this board only. Currently this board can boot up the tina Linux system (an OpenWRT fork by Allwinner) and populate a shell prompt via the serial, drive a parallel RGB display, play sounds via the headphone socket, and record audio from MIC. More functionalities will be tested in the future.
 
 **Additional Words**
 
