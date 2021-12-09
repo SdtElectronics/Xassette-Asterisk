@@ -37,6 +37,12 @@ The schematic in KiCAD format is available under [hw](hw/). BOM in csv format is
 ### IO Expansion Board
 To make use of IOs in the LCD port easier, [this expansion board](hw/auxiliary/Brk40p) converts all nets from FPC to 2.54mm pin headers with labeled IO indices. For 24pin DVP port, there is also an [expansion board](https://github.com/SdtElectronics/Biscuits/tree/master/24P_FPC_FFC_Breakout) but with no labels.
 
+## CHANGELOG
+### hw v0.2 
+* Added WiFi Module on `sdc2`, sharing pins with SPI Flash
+* Added ESD protection on USB and audio jacks
+* Changed pin headers of TVIN and FMIN (`J10`) to 2x3 2.00mm to optimize routing of USB
+
 ## FAQ
 > Are you going to sell some manufactured boards?
 
