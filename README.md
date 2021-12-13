@@ -11,17 +11,19 @@ Evaluation board for AllWinner's RISC-V 64 SoC F133/D1s
 ## About the Chip
 D1s/F133: RISC-V 64 single core @1.008G with in package 64MB DDR2
 
+## Guides
+[Quick Start](docs/quickStart.md)
+
+[Troubleshooting](docs/troubleshooting.md)
+
+[Wi-Fi](docs/WiFi.md)
+
 ## Pin Out
 ![resources](img/resources.jpg)
 
 ![pinout](img/pinc.jpg)
 
 Pins for LCD and DVP camera can also be used as IOs. See schematic below for detailed pin assignment.
-
-## Guides
-[Quick Start](docs/quickStart.md)
-
-[Troubleshooting](docs/troubleshooting.md)
 
 ## Schematic & BOM
 ![schematic](img/schematic.png)
@@ -50,7 +52,7 @@ No. I have no time and resource to batch manufacture this board. Some commercial
 
 > Where to buy some D1s chips?
 
-The supply is not yet very sufficient, but it should be more available within a month (hopefully can be purchased directly from Allwinner). For now there are some suppliers providing samples on taobao.
+There are several suppliers providing samples on taobao.
 
 > More information? Like what can this board do now?
 
