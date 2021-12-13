@@ -42,8 +42,12 @@ To make use of IOs in the LCD port easier, [this expansion board](hw/auxiliary/B
 ## CHANGELOG
 ### hw v0.2 
 * Added WiFi Module on `sdc2`, sharing pins with SPI Flash
+* Added FEL button
 * Added ESD protection on USB and audio jacks
 * Changed pin headers of TVIN and FMIN (`J10`) to 2x3 2.00mm to optimize routing of USB
+### hw v0.3
+* Fix pull-up/down resistors for USB-PD role detection
+* Align voltage of `VDDIO` in DVP interface with `VCC-PE`
 
 ## FAQ
 > Are you going to sell some manufactured boards?
