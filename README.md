@@ -40,12 +40,19 @@ The schematic in KiCAD format is available under [hw](hw/). BOM in csv format is
 To make use of IOs in the LCD port easier, [this expansion board](hw/auxiliary/Brk40p) converts all nets from FPC to 2.54mm pin headers with labeled IO indices. For 24pin DVP port, there is also an [expansion board](https://github.com/SdtElectronics/Biscuits/tree/master/24P_FPC_FFC_Breakout) but with no labels.
 
 ## CHANGELOG
-### hw v0.2 
+### hw-v0.2 
 * Added WiFi Module on `sdc2`, sharing pins with SPI Flash
 * Added FEL button
 * Added ESD protection on USB and audio jacks
 * Changed pin headers of TVIN and FMIN (`J10`) to 2x3 2.00mm to optimize routing of USB
-### hw v0.3
+
+### fw-v0.2
+* Enabled pins of `sdc2` for SDIO
+* Packed driver for RTL8189ftv WiFi module
+
+**NOTE**: hw-v0.1 board can **NOT** boot fw-v0.2 firmware. Use fw-v0.1 instead.
+
+### hw-v0.3
 * Fix pull-up/down resistors for USB-PD role detection
 * Align voltage of `VDDIO` in DVP interface with `VCC-PE`
 
@@ -58,6 +65,10 @@ No. I have no time and resource to batch manufacture this board. Some commercial
 
 There are several suppliers providing samples on taobao.
 
+> Where to find the BSP? Can I build the firmware myself?
+
+The tina BSP for D1s is opened to public and you can download it via [the mirror at linux-sunxi.org](https://dl.linux-sunxi.org/D1/SDK/). There is also [a good guide on linux-sunxi.org](https://linux-sunxi.org/D1_SDK_Howto) covering the building and trouble shooting.
+
 > More information? Like what can this board do now?
 
 The progress of this project is logged at [this Hackaday page](https://hackaday.io/project/182389-the-cheapest-risc-v-64-computer-by-now), and this repository will contain the source and documentation of this board only. Currently this board can boot up the tina Linux system (an OpenWRT fork by Allwinner) and populate a shell prompt via the serial, drive a parallel RGB display, play sounds via the headphone socket, and record audio from MIC. More functionalities will be tested in the future.
@@ -68,6 +79,12 @@ This project has gained unexpected popularity since the announcement. Thanks for
 
 D1s is an awesome chip with many features to be exploited. Designing a PCB is not hard as the arrangement of pins is quite thoughtful. The crucial part is correct values of some key components, and they were all marked in the schematic. A symbol of D1s with annotated pins is also included in this repository, so this should also be a good start point for your own design.
 
+## External Links
+[Page on Hackaday ](https://hackaday.io/project/182389-the-cheapest-risc-v-64-computer-by-now)
+
+[Post about batch manufacturing by cnx-software](https://www.cnx-software.com/2021/12/24/manufacturing-xassette-asterisk-open-source-hardware-board/)
+
+[WiKi on Linux-sunxi.org](https://linux-sunxi.org/Xassette_Asterisk)
 
 ## Licence
 This project is available under the [CERN OHL-w v2](https://ohwr.org/project/cernohl/wikis/Documents/CERN-OHL-version-2) licence. 
